@@ -1,0 +1,62 @@
+*::-webkit-scrollbar {
+    width: 12px;
+    /* width of the entire scrollbar */
+}
+
+
+*::-webkit-scrollbar-track {
+    background: $color-van-dyke;
+    /* color of the tracking area */
+}
+
+*::-webkit-scrollbar-thumb {
+    background-color: $color-wheat;
+    /* color of the scroll thumb */
+    border-radius: 20px;
+    /* roundness of the scroll thumb */
+}
+
+body {
+    background: rgb(19, 19, 19);
+    background: linear-gradient(126deg, rgba(19, 19, 19, 1) 0%, rgba(60, 47, 47, 1) 100%);
+}
+
+.container {
+    width: 1100px;
+    max-width: 100%;
+    margin: 0 auto;
+
+    @media screen and (max-width: 900px) {
+        width: 100%;
+        padding: 0 20px;
+        margin: 0;
+    }
+}
+
+section {
+    padding: 60px 0;
+}
+
+hr {
+    width: 100%;
+    background-color: $color-wheat;
+    height: 3px;
+    border-radius: 7px;
+    border: none;
+}
+
+code {
+    padding: 10px;
+    background: $color-wheat;
+    border-radius: 5px;
+    border: 4px solid $color-coyote;
+    color: $color-van-dyke;
+}
+
+a {
+    color: $color-coyote;
+
+    @media (max-width:770px) {
+        padding: .8em;
+    }
+}

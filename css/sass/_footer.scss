@@ -1,0 +1,177 @@
+.pagination {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 30px;
+
+    a {
+        display: flex;
+        align-items: center;
+        text-decoration: none;
+        color: $color-cream;
+        margin: 10px;
+
+        &:hover {
+            text-decoration: underline;
+        }
+    }
+
+    span {
+        background-color: $color-cream;
+        color: $color-van-dyke;
+        border-radius: 5px;
+        margin: 0 10px;
+        font-weight: bold;
+        font-size: 23px;
+        padding: 15px 2px;
+
+        &.current {
+            padding: 2px 8px;
+        }
+    }
+}
+
+footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    background: $color-coyote;
+    background: linear-gradient(175deg, rgba(139, 90, 43, 1) 0%, rgba(101, 50, 2, 1) 100%);
+
+    nav {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        padding: 50px 20px !important;
+
+        @media (max-width:770px) {
+            flex-direction: column;
+        }
+
+        .about {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            width: 100%;
+            height: auto;
+            padding: 0;
+            text-align: center;
+
+            img {
+                height: 100px;
+            }
+
+            .slogan {
+                font-weight: bold;
+                text-align: initial;
+                text-align: center;
+                font-size: 24px;
+
+            }
+
+            p {
+                background-color: transparent;
+                color: $color-cream;
+                font-weight: 400;
+                text-align: justify;
+                text-align: center;
+
+            }
+        }
+
+        .links {
+            width: 100%;
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+            align-items: stretch;
+            justify-content: flex-start;
+
+            .itens {
+                width: 25%;
+                display: flex;
+                flex-direction: column;
+                align-items: flex-start;
+                flex-wrap: nowrap;
+
+                @media (max-width:770px) {
+                    width: 100%;
+                    align-items: center;
+                    align-content: stretch;
+                }
+
+                h2 {
+                    margin: 10px 0;
+                    color: $color-cream;
+                }
+
+                ul {
+                    margin: 0;
+                    padding: 0;
+                    height: 100%;
+                    max-height: 250px;
+                    overflow: auto;
+
+                    &::-webkit-scrollbar {
+                        width: 6px;
+                    }
+
+                    &::-webkit-scrollbar-track {
+                        background: transparent;
+                    }
+
+                    &.redes {
+                        display: flex;
+                        flex-direction: column;
+                        align-items: flex-start;
+
+                        li {
+                            margin: 10px 0;
+
+                            a {
+                                span {
+                                    background-color: $color-cream;
+                                    color: $color-coyote;
+                                    padding: 7px 5px;
+                                    margin-right: 10px;
+                                    border-radius: 50%;
+                                }
+                            }
+                        }
+                    }
+
+                    li {
+                        margin: 7px 15px 0 0;
+
+                        @media (max-width:770px) {
+                            text-align: center;
+                        }
+
+                        a {
+                            text-decoration: none;
+                            color: $color-cream;
+
+                            &:hover {
+                                text-decoration: underline;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    p {
+        width: 100%;
+        background-color: $color-wheat;
+        color: $color-dark-red;
+        text-align: center;
+        margin: 0;
+        padding: 10px 0;
+        font-weight: bold;
+        font-size: 16px;
+    }
+}
